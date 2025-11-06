@@ -46,9 +46,9 @@ if __name__ == '__main__':
     csv_file = 'birthdays.csv'  
     ical_file = 'birthdays.ics'  
     max_age = 100  
-    csv_deliiter = ';'
+    csv_delimiter = ';'
     date_format = '%d/%m/%Y'
 
-    birthdays = read_birthdays_from_csv(csv_file, csv_deliiter, date_format)  
+    birthdays = read_birthdays_from_csv(csv_file, csv_delimiter, date_format)  
     events = create_birthday_events(birthdays, max_age)  
     create_ical_file(events, ical_file)  
